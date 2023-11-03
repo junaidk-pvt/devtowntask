@@ -1,0 +1,36 @@
+.productContainer{
+    margin: 15px;
+    
+    // width: 300px;
+    // height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    .cardBox{
+        border: 2px blue solid;
+        border-radius: 10px;
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 250px;
+            width: 250px;
+        }
+        .title{
+            display: flex;
+            gap:20px;
+            // justify-content: space-between;
+            .price{
+                // width: 30%;
+            }
+            .description{
+                width: 150px;
+            }
+        }
+        .description{
+            width: 300px;
+        }
+    }
+}

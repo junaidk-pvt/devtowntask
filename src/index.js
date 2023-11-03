@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Product from './pages/Product';
+import Navbar from './Components/Navbar/Navbar';
+import ProductContextProvider from './context/ProductContextProvider';
+import Search from './Components/Search/Search';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <ProductContextProvider>
+    <Navbar/>
+    <Search />
+    <Product />
+  </ProductContextProvider>
+  // {/* </React.StrictMode> */}
 );
 
 // If you want to start measuring performance in your app, pass a function

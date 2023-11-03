@@ -1,0 +1,94 @@
+.container {
+    .filterIcon {
+        cursor: pointer;
+    }
+
+    .filter {
+        position: absolute;
+        overflow: auto;
+        height: 45vh;
+        width: 200px;
+        z-index: 4;
+        top: 60px;
+        right: 40px;
+
+        // @media (max-width: 425px) {
+        //     top: 90px;
+        //     right: 200px;
+        // }
+
+        padding: 15px;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 10px;
+
+        .filterTitle {
+            margin: auto;
+            padding: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            color: blue;
+
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            // width: fit-content;
+            padding: 5px 10px;
+            cursor: pointer;
+
+            .checkbox {
+                display: flex;
+                align-items: center;
+
+                .memberCheckBox {
+                    height: 15px !important;
+                    width: 15px;
+                    margin-top: 0;
+                }
+            }
+
+            .memberName {
+                font-size: 14px;
+            }
+        }
+    }
+    position: relative;
+    display: flex;
+    gap:20px;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+
+    .searchInput {
+        position: relative;
+        padding-left: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .searchIcon {
+        position: absolute;
+        z-index: 1;
+        right: 220px;
+        height: 12px;
+
+        @media (min-width: 425px) {
+            right: 200px;
+        }
+    }
+}
+
+.inputField {
+    border-color: gray;
+    outline: none !important;
+    height: 35px;
+
+    &:focus {
+        outline: none !important;
+        box-shadow: 0 0 5px 0px blue !important;
+        border-color: blue !important;
+    }
+}
